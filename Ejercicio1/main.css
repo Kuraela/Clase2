@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    height: 100vh;
+  }
+  
+  
+  .container {
+    border: 2px solid red;
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    
+  }
+  .container:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:0;
+  }
+  
+  .container:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right:0;
+  }
+  
+  .option1{
+    position: absolute;
+    margin: auto;
+    right:0;
+    left:0;
+    bottom:0;
+    top:0;
+    
+  }
+  
+  .option2{
+    display: flex;
+    allign-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  .option3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+  }
